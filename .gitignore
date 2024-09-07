@@ -8,6 +8,6 @@ src/**.js
 coverage
 *.log
 yarn.lock
-types
-types/*
+# types
+# types/*
 .env
