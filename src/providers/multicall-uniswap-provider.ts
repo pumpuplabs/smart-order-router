@@ -5,7 +5,10 @@ import stats from 'stats-lite';
 import { UniswapInterfaceMulticall__factory } from '../types/v3/factories/UniswapInterfaceMulticall__factory';
 import { UniswapInterfaceMulticall } from '../types/v3/UniswapInterfaceMulticall';
 import { ChainId } from '../util';
-import { UNISWAP_MULTICALL_ADDRESS } from '../util/addresses';
+import {
+  BASE_MULTICALL3_ADDRESS,
+  UNISWAP_MULTICALL_ADDRESS,
+} from '../util/addresses';
 import { log } from '../util/log';
 import {
   CallMultipleFunctionsOnSameContractParams,
@@ -25,6 +28,7 @@ const contractAddressByChain: { [chainId in ChainId]?: string } = {
   [ChainId.KOVAN]: UNISWAP_MULTICALL_ADDRESS,
   [ChainId.ROPSTEN]: UNISWAP_MULTICALL_ADDRESS,
   [ChainId.GÖRLI]: UNISWAP_MULTICALL_ADDRESS,
+  [ChainId.BASE_SEPOLIA]: BASE_MULTICALL3_ADDRESS,
 };
 
 /**

@@ -371,6 +371,22 @@ export const WETH_POLYGON_MUMBAI = new Token(
   'Wrapped Ether'
 );
 
+export const WETH_BASE_SEPOLIA = new Token(
+  ChainId.BASE_SEPOLIA,
+  '0x4200000000000000000000000000000000000006',
+  18,
+  'WETH',
+  'Wrapped Ether'
+);
+
+export const USDC_BASE_SEPOLIA = new Token(
+  ChainId.BASE_SEPOLIA,
+  '0x5145d5D8831FC0d345dE49ff4D04D12eDE28DF84',
+  6,
+  'USDC',
+  'USD//C'
+);
+
 export class TokenProvider implements ITokenProvider {
   constructor(
     private chainId: ChainId,

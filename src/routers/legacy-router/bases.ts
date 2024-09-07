@@ -2,6 +2,7 @@ import { Token } from '@uniswap/sdk-core';
 import {
   DAI_MAINNET,
   ITokenProvider,
+  USDC_BASE_SEPOLIA,
   USDC_MAINNET,
   USDT_MAINNET,
   WBTC_MAINNET,
@@ -39,6 +40,10 @@ export const BASES_TO_CHECK_TRADES_AGAINST = (
     ],
     [ChainId.POLYGON]: [WMATIC_POLYGON],
     [ChainId.POLYGON_MUMBAI]: [WMATIC_POLYGON_MUMBAI],
+    [ChainId.BASE_SEPOLIA]: [
+      USDC_BASE_SEPOLIA,
+      WRAPPED_NATIVE_CURRENCY[ChainId.BASE_SEPOLIA]!,
+    ],
   };
 };
 

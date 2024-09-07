@@ -67,6 +67,8 @@ export declare const WMATIC_POLYGON_MUMBAI: Token;
 export declare const USDC_POLYGON_MUMBAI: Token;
 export declare const DAI_POLYGON_MUMBAI: Token;
 export declare const WETH_POLYGON_MUMBAI: Token;
+export declare const WETH_BASE_SEPOLIA: Token;
+export declare const USDC_BASE_SEPOLIA: Token;
 export declare class TokenProvider implements ITokenProvider {
     private chainId;
     protected multicall2Provider: IMulticallProvider;

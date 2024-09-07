@@ -1,4 +1,4 @@
-import { ApprovalTypes } from '@uniswap/router-sdk';
+import { ApprovalTypes } from '@uniswap/router-sdk/dist/approveAndCall';
 import { Currency, CurrencyAmount } from '@uniswap/sdk-core';
 import { IMulticallProvider } from './multicall-provider';
 declare type TokenApprovalTypes = {

@@ -10,7 +10,8 @@ export declare enum ChainId {
     ARBITRUM_ONE = 42161,
     ARBITRUM_RINKEBY = 421611,
     POLYGON = 137,
-    POLYGON_MUMBAI = 80001
+    POLYGON_MUMBAI = 80001,
+    BASE_SEPOLIA = 85432
 }
 export declare const V2_SUPPORTED: ChainId[];
 export declare const HAS_L1_FEE: ChainId[];
@@ -26,7 +27,8 @@ export declare enum ChainName {
     ARBITRUM_ONE = "arbitrum-mainnet",
     ARBITRUM_RINKEBY = "arbitrum-rinkeby",
     POLYGON = "polygon-mainnet",
-    POLYGON_MUMBAI = "polygon-mumbai"
+    POLYGON_MUMBAI = "polygon-mumbai",
+    BASE_SEPOLIA = "base-sepolia"
 }
 export declare enum NativeCurrencyName {
     ETHER = "ETH",

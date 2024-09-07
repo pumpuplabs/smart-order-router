@@ -19,6 +19,7 @@ import {
   FEI_MAINNET,
   ITokenProvider,
   USDC_ARBITRUM,
+  USDC_BASE_SEPOLIA,
   USDC_MAINNET,
   USDC_OPTIMISM,
   USDC_OPTIMISTIC_KOVAN,
@@ -124,6 +125,10 @@ const baseTokensByChain: { [chainId in ChainId]?: Token[] } = {
   [ChainId.ARBITRUM_RINKEBY]: [DAI_ARBITRUM_RINKEBY, USDT_ARBITRUM_RINKEBY],
   [ChainId.POLYGON]: [USDC_POLYGON, WMATIC_POLYGON],
   [ChainId.POLYGON_MUMBAI]: [DAI_POLYGON_MUMBAI, WMATIC_POLYGON_MUMBAI],
+  [ChainId.BASE_SEPOLIA]: [
+    USDC_BASE_SEPOLIA,
+    WRAPPED_NATIVE_CURRENCY[ChainId.BASE_SEPOLIA]!,
+  ],
 };
 
 export async function getV3CandidatePools({

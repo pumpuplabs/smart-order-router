@@ -1,8 +1,9 @@
 import { Token } from '@uniswap/sdk-core';
-import { FACTORY_ADDRESS } from '@uniswap/v3-sdk';
+import { FACTORY_ADDRESS, FACTORY_ADDRESS_MAP } from '@uniswap/v3-sdk';
 import { ChainId } from './chains';
 
 export const V3_CORE_FACTORY_ADDRESS = FACTORY_ADDRESS;
+export const V3_CORE_FACTORY_ADDRESS_MAP = FACTORY_ADDRESS_MAP;
 export const QUOTER_V2_ADDRESS = '0x61fFE014bA17989E743c5F6cB21bF9697530B21e';
 export const OVM_GASPRICE_ADDRESS =
   '0x420000000000000000000000000000000000000F';
@@ -16,6 +17,9 @@ export const V3_MIGRATOR_ADDRESS = '0xA5644E29708357803b5A882D272c41cC0dF92B34';
 export const UNISWAP_MULTICALL_ADDRESS =
   '0x1F98415757620B543A52E61c46B32eB19261F984';
 export const MULTICALL2_ADDRESS = '0x5BA1e12693Dc8F9c48aAD8770482f4739bEeD696';
+
+export const BASE_MULTICALL3_ADDRESS =
+  '0xcA11bde05977b3631167028862bE2a173976CA11';
 
 export const WETH9: {
   [chainId in Exclude<
@@ -82,6 +86,13 @@ export const WETH9: {
   [ChainId.ARBITRUM_RINKEBY]: new Token(
     ChainId.ARBITRUM_RINKEBY,
     '0xB47e6A5f8b33b3F17603C83a0535A9dcD7E32681',
+    18,
+    'WETH',
+    'Wrapped Ether'
+  ),
+  [ChainId.BASE_SEPOLIA]: new Token(
+    ChainId.BASE_SEPOLIA,
+    '0x4200000000000000000000000000000000000006',
     18,
     'WETH',
     'Wrapped Ether'
