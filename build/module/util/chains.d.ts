@@ -11,7 +11,7 @@ export declare enum ChainId {
     ARBITRUM_RINKEBY = 421611,
     POLYGON = 137,
     POLYGON_MUMBAI = 80001,
-    BASE_SEPOLIA = 85432
+    BASE_SEPOLIA = 84532
 }
 export declare const V2_SUPPORTED: ChainId[];
 export declare const HAS_L1_FEE: ChainId[];

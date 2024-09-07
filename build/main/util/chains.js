@@ -15,7 +15,7 @@ var ChainId;
     ChainId[ChainId["ARBITRUM_RINKEBY"] = 421611] = "ARBITRUM_RINKEBY";
     ChainId[ChainId["POLYGON"] = 137] = "POLYGON";
     ChainId[ChainId["POLYGON_MUMBAI"] = 80001] = "POLYGON_MUMBAI";
-    ChainId[ChainId["BASE_SEPOLIA"] = 85432] = "BASE_SEPOLIA";
+    ChainId[ChainId["BASE_SEPOLIA"] = 84532] = "BASE_SEPOLIA";
 })(ChainId = exports.ChainId || (exports.ChainId = {}));
 exports.V2_SUPPORTED = [
     ChainId.MAINNET,
@@ -54,7 +54,7 @@ const ID_TO_CHAIN_ID = (id) => {
             return ChainId.POLYGON;
         case 80001:
             return ChainId.POLYGON_MUMBAI;
-        case 85432:
+        case 84532:
             return ChainId.BASE_SEPOLIA;
         default:
             throw new Error(`Unknown chain id: ${id}`);
@@ -121,7 +121,7 @@ const ID_TO_NETWORK_NAME = (id) => {
             return ChainName.POLYGON;
         case 80001:
             return ChainName.POLYGON_MUMBAI;
-        case 85432:
+        case 84532:
             return ChainName.BASE_SEPOLIA;
         default:
             throw new Error(`Unknown chain id: ${id}`);
