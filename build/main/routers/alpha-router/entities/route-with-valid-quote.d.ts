@@ -53,7 +53,7 @@ export declare type V2RouteWithValidQuoteParams = {
  * @class V2RouteWithValidQuote
  */
 export declare class V2RouteWithValidQuote implements IV2RouteWithValidQuote {
-    readonly protocol: any;
+    readonly protocol = Protocol.V2;
     amount: CurrencyAmount;
     rawQuote: BigNumber;
     quote: CurrencyAmount;
@@ -93,7 +93,7 @@ export declare type V3RouteWithValidQuoteParams = {
  * @class V3RouteWithValidQuote
  */
 export declare class V3RouteWithValidQuote implements IV3RouteWithValidQuote {
-    readonly protocol: any;
+    readonly protocol = Protocol.V3;
     amount: CurrencyAmount;
     rawQuote: BigNumber;
     quote: CurrencyAmount;
