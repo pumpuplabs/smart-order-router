@@ -9,7 +9,7 @@ export declare class V3Route extends V3RouteRaw<Token, Token> {
 }
 export declare class V2Route extends V2RouteRaw<Token, Token> {
 }
-export declare type SwapRoute = {
+export type SwapRoute = {
     /**
      * The quote for the swap.
      * For EXACT_IN swaps this will be an amount of token out.
@@ -56,7 +56,7 @@ export declare type SwapRoute = {
      */
     methodParameters?: MethodParameters;
 };
-export declare type SwapToRatioRoute = SwapRoute & {
+export type SwapToRatioRoute = SwapRoute & {
     optimalRatio: Fraction;
     postSwapTargetPool: Pool;
 };
@@ -65,19 +65,19 @@ export declare enum SwapToRatioStatus {
     NO_ROUTE_FOUND = 2,
     NO_SWAP_NEEDED = 3
 }
-export declare type SwapToRatioSuccess = {
+export type SwapToRatioSuccess = {
     status: SwapToRatioStatus.SUCCESS;
     result: SwapToRatioRoute;
 };
-export declare type SwapToRatioFail = {
+export type SwapToRatioFail = {
     status: SwapToRatioStatus.NO_ROUTE_FOUND;
     error: string;
 };
-export declare type SwapToRatioNoSwapNeeded = {
+export type SwapToRatioNoSwapNeeded = {
     status: SwapToRatioStatus.NO_SWAP_NEEDED;
 };
-export declare type SwapToRatioResponse = SwapToRatioSuccess | SwapToRatioFail | SwapToRatioNoSwapNeeded;
-export declare type SwapOptions = {
+export type SwapToRatioResponse = SwapToRatioSuccess | SwapToRatioFail | SwapToRatioNoSwapNeeded;
+export type SwapOptions = {
     recipient: string;
     slippageTolerance: Percent;
     deadline: number;
@@ -93,15 +93,15 @@ export declare type SwapOptions = {
         expiry: string;
     });
 };
-export declare type SwapAndAddConfig = {
+export type SwapAndAddConfig = {
     maxIterations: number;
     ratioErrorTolerance: Fraction;
 };
-export declare type SwapAndAddOptions = {
+export type SwapAndAddOptions = {
     swapOptions: SwapOptions;
     addLiquidityOptions: CondensedAddLiquidityOptions;
 };
-export declare type SwapAndAddParameters = {
+export type SwapAndAddParameters = {
     initialBalanceTokenIn: CurrencyAmount;
     initialBalanceTokenOut: CurrencyAmount;
     preLiquidityPosition: Position;

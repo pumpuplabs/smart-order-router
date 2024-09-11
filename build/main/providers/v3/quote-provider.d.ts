@@ -10,7 +10,7 @@ import { ProviderConfig } from '../provider';
 /**
  * A quote for a swap on V3.
  */
-export declare type V3AmountQuote = {
+export type V3AmountQuote = {
     amount: CurrencyAmount;
     /**
      * Quotes can be null (e.g. pool did not have enough liquidity).
@@ -56,11 +56,11 @@ export declare class ProviderTimeoutError extends Error {
 export declare class ProviderGasError extends Error {
     name: string;
 }
-export declare type QuoteRetryOptions = RetryOptions;
+export type QuoteRetryOptions = RetryOptions;
 /**
  * The V3 route and a list of quotes for that route.
  */
-export declare type V3RouteWithQuotes = [V3Route, V3AmountQuote[]];
+export type V3RouteWithQuotes = [V3Route, V3AmountQuote[]];
 /**
  * Provider for getting quotes on Uniswap V3.
  *
@@ -103,7 +103,7 @@ export interface IV3QuoteProvider {
  * V3 quotes can consume a lot of gas (if the swap is so large that it swaps through a large
  * number of ticks), so there is a risk of exceeded gas limits in these multicalls.
  */
-export declare type BatchParams = {
+export type BatchParams = {
     /**
      * The number of quotes to fetch in each multicall.
      */
@@ -124,23 +124,23 @@ export declare type BatchParams = {
  * The fallback values for gasLimit and multicallChunk if any failures occur.
  *
  */
-export declare type FailureOverrides = {
+export type FailureOverrides = {
     multicallChunk: number;
     gasLimitOverride: number;
 };
-export declare type BlockHeaderFailureOverridesDisabled = {
+export type BlockHeaderFailureOverridesDisabled = {
     enabled: false;
 };
-export declare type BlockHeaderFailureOverridesEnabled = {
+export type BlockHeaderFailureOverridesEnabled = {
     enabled: true;
     rollbackBlockOffset: number;
     attemptsBeforeRollback: number;
 };
-export declare type BlockHeaderFailureOverrides = BlockHeaderFailureOverridesDisabled | BlockHeaderFailureOverridesEnabled;
+export type BlockHeaderFailureOverrides = BlockHeaderFailureOverridesDisabled | BlockHeaderFailureOverridesEnabled;
 /**
  * Config around what block number to query and how to handle failures due to block header errors.
  */
-export declare type BlockNumberConfig = {
+export type BlockNumberConfig = {
     baseBlockOffset: number;
     rollback: BlockHeaderFailureOverrides;
 };
