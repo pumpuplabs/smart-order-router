@@ -9,7 +9,7 @@ import { RouteWithValidQuote, V2RouteWithValidQuote, V3RouteWithValidQuote } fro
 export declare const usdGasTokensByChain: {
     [chainId in ChainId]?: Token[];
 };
-export type L1ToL2GasCosts = {
+export declare type L1ToL2GasCosts = {
     gasUsedL1: BigNumber;
     gasCostL1USD: CurrencyAmount;
     gasCostL1QuoteToken: CurrencyAmount;
@@ -30,7 +30,7 @@ export type L1ToL2GasCosts = {
  * amount that is considered in the algorithm so it is important to minimize the number of
  * long running operations.
  */
-export type IGasModel<TRouteWithValidQuote extends RouteWithValidQuote> = {
+export declare type IGasModel<TRouteWithValidQuote extends RouteWithValidQuote> = {
     estimateGasCost(routeWithValidQuote: TRouteWithValidQuote): {
         gasEstimate: BigNumber;
         gasCostInToken: CurrencyAmount;

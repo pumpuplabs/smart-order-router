@@ -2,7 +2,7 @@ import { BigNumber } from '@ethersproject/bignumber';
 import { BaseProvider } from '@ethersproject/providers';
 import { ChainId } from '../util';
 import { CallMultipleFunctionsOnSameContractParams, CallSameFunctionOnContractWithMultipleParams, CallSameFunctionOnMultipleContractsParams, IMulticallProvider, Result } from './multicall-provider';
-export type UniswapMulticallConfig = {
+export declare type UniswapMulticallConfig = {
     gasLimitPerCallOverride?: number;
 };
 /**

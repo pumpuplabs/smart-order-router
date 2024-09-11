@@ -1,11 +1,15 @@
 import { Token } from '@uniswap/sdk-core';
 import { ChainId } from './chains';
-export declare const V3_CORE_FACTORY_ADDRESS = "0xD7958C86786bfeEe1350F764031109901582d939";
+export declare const V3_CORE_FACTORY_ADDRESS = "0x434f93bc85e709C7c6760f1DfE793D35501EA671";
 export declare const V3_CORE_FACTORY_ADDRESS_MAP: {
     85432: string;
     1: string;
 };
 export declare const QUOTER_V2_ADDRESS = "0x61fFE014bA17989E743c5F6cB21bF9697530B21e";
+export declare const QUOTER_V2_ADDRESS_MAP: {
+    84532: string;
+    1: string;
+};
 export declare const OVM_GASPRICE_ADDRESS = "0x420000000000000000000000000000000000000F";
 export declare const ARB_GASINFO_ADDRESS = "0x000000000000000000000000000000000000006C";
 export declare const TICK_LENS_ADDRESS = "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";

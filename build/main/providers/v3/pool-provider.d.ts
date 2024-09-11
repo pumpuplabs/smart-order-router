@@ -33,12 +33,12 @@ export interface IV3PoolProvider {
         token1: Token;
     };
 }
-export type V3PoolAccessor = {
+export declare type V3PoolAccessor = {
     getPool: (tokenA: Token, tokenB: Token, feeAmount: FeeAmount) => Pool | undefined;
     getPoolByAddress: (address: string) => Pool | undefined;
     getAllPools: () => Pool[];
 };
-export type V3PoolRetryOptions = RetryOptions;
+export declare type V3PoolRetryOptions = RetryOptions;
 export declare class V3PoolProvider implements IV3PoolProvider {
     protected chainId: ChainId;
     protected multicall2Provider: IMulticallProvider;

@@ -6,6 +6,10 @@ export declare const V3_CORE_FACTORY_ADDRESS_MAP: {
     1: string;
 };
 export declare const QUOTER_V2_ADDRESS = "0x61fFE014bA17989E743c5F6cB21bF9697530B21e";
+export declare const QUOTER_V2_ADDRESS_MAP: {
+    84532: string;
+    1: string;
+};
 export declare const OVM_GASPRICE_ADDRESS = "0x420000000000000000000000000000000000000F";
 export declare const ARB_GASINFO_ADDRESS = "0x000000000000000000000000000000000000006C";
 export declare const TICK_LENS_ADDRESS = "0xbfd8137f7d1516D3ea5cA83523914859ec47F573";

@@ -9,7 +9,7 @@ export declare class V3Route extends V3RouteRaw<Token, Token> {
 }
 export declare class V2Route extends V2RouteRaw<Token, Token> {
 }
-export type SwapRoute = {
+export declare type SwapRoute = {
     /**
      * The quote for the swap.
      * For EXACT_IN swaps this will be an amount of token out.
@@ -56,7 +56,7 @@ export type SwapRoute = {
      */
     methodParameters?: MethodParameters;
 };
-export type SwapToRatioRoute = SwapRoute & {
+export declare type SwapToRatioRoute = SwapRoute & {
     optimalRatio: Fraction;
     postSwapTargetPool: Pool;
 };
@@ -65,19 +65,19 @@ export declare enum SwapToRatioStatus {
     NO_ROUTE_FOUND = 2,
     NO_SWAP_NEEDED = 3
 }
-export type SwapToRatioSuccess = {
+export declare type SwapToRatioSuccess = {
     status: SwapToRatioStatus.SUCCESS;
     result: SwapToRatioRoute;
 };
-export type SwapToRatioFail = {
+export declare type SwapToRatioFail = {
     status: SwapToRatioStatus.NO_ROUTE_FOUND;
     error: string;
 };
-export type SwapToRatioNoSwapNeeded = {
+export declare type SwapToRatioNoSwapNeeded = {
     status: SwapToRatioStatus.NO_SWAP_NEEDED;
 };
-export type SwapToRatioResponse = SwapToRatioSuccess | SwapToRatioFail | SwapToRatioNoSwapNeeded;
-export type SwapOptions = {
+export declare type SwapToRatioResponse = SwapToRatioSuccess | SwapToRatioFail | SwapToRatioNoSwapNeeded;
+export declare type SwapOptions = {
     recipient: string;
     slippageTolerance: Percent;
     deadline: number;
@@ -93,15 +93,15 @@ export type SwapOptions = {
         expiry: string;
     });
 };
-export type SwapAndAddConfig = {
+export declare type SwapAndAddConfig = {
     maxIterations: number;
     ratioErrorTolerance: Fraction;
 };
-export type SwapAndAddOptions = {
+export declare type SwapAndAddOptions = {
     swapOptions: SwapOptions;
     addLiquidityOptions: CondensedAddLiquidityOptions;
 };
-export type SwapAndAddParameters = {
+export declare type SwapAndAddParameters = {
     initialBalanceTokenIn: CurrencyAmount;
     initialBalanceTokenOut: CurrencyAmount;
     preLiquidityPosition: Position;

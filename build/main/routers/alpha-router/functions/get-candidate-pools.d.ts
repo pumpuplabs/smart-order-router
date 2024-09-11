@@ -7,10 +7,10 @@ import { IV3PoolProvider, V3PoolAccessor } from '../../../providers/v3/pool-prov
 import { IV3SubgraphProvider } from '../../../providers/v3/subgraph-provider';
 import { ChainId } from '../../../util';
 import { AlphaRouterConfig } from '../alpha-router';
-export type PoolId = {
+export declare type PoolId = {
     id: string;
 };
-export type CandidatePoolsBySelectionCriteria = {
+export declare type CandidatePoolsBySelectionCriteria = {
     protocol: Protocol;
     selections: {
         topByBaseWithTokenIn: PoolId[];
@@ -24,7 +24,7 @@ export type CandidatePoolsBySelectionCriteria = {
         topByTVLUsingTokenOutSecondHops: PoolId[];
     };
 };
-export type V3GetCandidatePoolsParams = {
+export declare type V3GetCandidatePoolsParams = {
     tokenIn: Token;
     tokenOut: Token;
     routeType: TradeType;
@@ -35,7 +35,7 @@ export type V3GetCandidatePoolsParams = {
     blockedTokenListProvider?: ITokenListProvider;
     chainId: ChainId;
 };
-export type V2GetCandidatePoolsParams = {
+export declare type V2GetCandidatePoolsParams = {
     tokenIn: Token;
     tokenOut: Token;
     routeType: TradeType;
