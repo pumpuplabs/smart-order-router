@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.SwapRouterProvider = void 0;
 const SwapRouter02__factory_1 = require("../types/other/factories/SwapRouter02__factory");
 const util_1 = require("../util");
-const SWAP_ROUTER_ADDRESS = '0x68b3465833fb72A70ecDF485E0e4C7bD8665Fc45';
+const SWAP_ROUTER_ADDRESS = '0x8CE47c11c7d9c7C985FAfFe59951feDFD7A5c8Bf';
 class SwapRouterProvider {
     constructor(multicall2Provider) {
         this.multicall2Provider = multicall2Provider;
