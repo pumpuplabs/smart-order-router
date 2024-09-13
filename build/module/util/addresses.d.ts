@@ -1,6 +1,6 @@
 import { Token } from '@uniswap/sdk-core';
 import { ChainId } from './chains';
-export declare const V3_CORE_FACTORY_ADDRESS = "0xD38A464A4446ea42A6d7EdC68A24e175b4Ff38Ae";
+export declare const V3_CORE_FACTORY_ADDRESS = "0x235a0f30B8D3338E5046b2e9cDb62E5ce498d3A1";
 export declare const V3_CORE_FACTORY_ADDRESS_MAP: {
     84532: string;
     1: string;
